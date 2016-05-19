@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Dice VIZ</title>
+    <link rel="stylesheet" href="css/dice_viz.css">
+  </head>
+  <body>
+    <svg class="chart"></svg>
+    <div class="inputs">
+      <input type="button" onclick="rollDice()" value="Roll the dice"/>
+      <select onchange="clearGraph()" id="diceInput">
+        <option value="1">1 die</option>
+        <option value="2">2 dice</option>
+        <option value="3">3 dice</option>
+        <option value="4">4 dice</option>
+        <option value="5">5 dice</option>
+      </select>
+      <label>Number of rolls</label>
+      <select id="rollsInput">
+        <option value="1">1</option>
+        <option value="10">10</option>
+        <option value="100">100</option>
+        <option value="1000">1,000</option>
+        <option value="10000">10,000</option>
+      </select>
+    </div>
+    <script src="js/d3.v3.min.js"  charset="utf-8"></script>
+    <script src="js/dice_viz.js"></script>
+  </body>
+</html>
